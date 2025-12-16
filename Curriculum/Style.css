@@ -1,0 +1,172 @@
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --muted: #666666;
+  --accent: #111111;
+  --border: #e6e6e6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: var(--text);
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.cv {
+  max-width: 900px;
+  margin: 40px auto;
+  background: var(--bg);
+  padding: 40px 48px;
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+}
+
+/* Encabezado con imagen centrada */
+.cv-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 16px auto;
+  border: 3px solid var(--border);
+}
+
+.cv-name {
+  font-size: 28px;
+  letter-spacing: 0.6px;
+  margin: 0 0 18px 0;
+  color: var(--accent);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Tabla de contacto */
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto 10px auto;
+  max-width: 560px;
+}
+
+.contact-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  font-size: 15px;
+}
+
+.contact-table .label {
+  width: 140px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.contact-table a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.contact-table a:hover {
+  text-decoration: underline;
+}
+
+/* Secciones */
+.section {
+  margin-top: 28px;
+}
+
+.section-title {
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  margin: 0 0 12px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--border);
+  color: var(--accent);
+}
+
+/* Subtítulo dentro de experiencia */
+.subsection-title {
+  font-size: 16px;
+  margin: 18px 0 8px 0;
+  color: var(--accent);
+}
+
+/* Bloques de experiencia y estudios */
+.block {
+  margin: 10px 0 12px 0;
+}
+
+.block-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.block-role,
+.block-center {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.block-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.date {
+  color: var(--muted);
+}
+
+/* Listas */
+.list {
+  margin: 8px 0 0 0;
+  padding-left: 20px;
+}
+
+.list li {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+/* Párrafos */
+p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+/* Impresión */
+@media print {
+  body {
+    background: #fff;
+  }
+  .cv {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  .profile-photo {
+    border: 2px solid #ddd;
+  }
+}
