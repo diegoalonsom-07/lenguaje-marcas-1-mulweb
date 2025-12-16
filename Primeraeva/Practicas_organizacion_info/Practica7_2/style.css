@@ -1,0 +1,42 @@
+h1{
+    color: rgb(0, 140, 255);
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+table{
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.titulo{
+    background-color: rgb(219, 219, 219);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid black;
+    text-align: center;
+}
+.horas{
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid black;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.tabla{
+    border: 1px solid black;
+}
+.juntarse{
+    border-right: 1px solid black;
+}
+.recreo{
+    background-color: rgb(205, 252, 130);
+    border: 1px solid black;
+}
+td{
+    text-align: center;
+}

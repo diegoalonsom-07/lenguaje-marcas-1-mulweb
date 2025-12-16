@@ -1,0 +1,43 @@
+body{
+    background-image: url(fondo.png);
+}
+div{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 25px;
+    border: 2px solid #546c8c;
+    border-radius: 5px;
+    width: 120px;
+    height: 85px;
+    text-align: center;
+    padding: 0;
+    background-color: #546c8c;
+    color: white;
+    box-sizing: border-box;
+}
+.uno:hover{
+    animation: unoAnim 5s infinite ease-in-out;
+    animation-fill-mode: both;
+    box-sizing: border-box;
+}
+@keyframes unoAnim{
+    50%{
+        width: 500px;
+        height: 60px;
+        background-color: #546c8c;
+    }
+    100%{
+        width: 500px;
+        height: 300px;
+        background-color: #364a66;
+    }
+}
+.cuatro:hover{
+    animation: girar 10s linear 0s 3;
+    animation-fill-mode: both;
+    transform-origin: 50% 50%;
+}
+@keyframes girar{
+    0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(360deg); }
+}

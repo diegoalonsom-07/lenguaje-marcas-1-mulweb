@@ -1,0 +1,18 @@
+div {
+    background-color: blue;
+    color: white;
+    width: 120px;
+    height: 70px;
+    margin: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+}
+#quintob{
+    visibility: hidden;
+}
+img{
+    display: block;
+    margin: auto;
+}

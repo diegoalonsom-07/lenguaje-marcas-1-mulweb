@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 6.2</title>
+    <style>
+        header h1{
+            margin: 10px;
+            position: static;
+            text-align: center;
+            background-color: rgb(189, 188, 188);
+            border: 3px solid rgb(255, 0, 0);
+            padding: 10px;
+        }
+        .primero{
+            margin: 10px;
+            position: static;
+            background-color: rgb(189, 188, 188);
+        }
+        .segundo{
+            margin-left: 150px;
+            margin-top: 15px;
+            position: relative;
+            border: 3px solid rgb(44, 221, 0);
+            display: inline-block;
+        }
+        .tercero{
+            position: static;
+            margin-left: 10px;
+            border: 3px solid rgb(0, 0, 255);
+            padding: 0px;
+
+        }
+        .cuarto{
+            position: relative;
+            top: 15px;
+            right: 0px;
+            border: 3px solid rgb(255, 0, 255);
+            padding: 0px;
+        }
+        .cuatro1{
+            position: absolute;
+            border: 3px solid rgb(255, 251, 0);
+            background-color: rgb(212, 212, 212);
+            bottom: 0px;
+            right: 0px;
+        }
+        .cinco{
+            position: relative;
+            background-color: rgb(189, 188, 188);
+            top: 15px;
+            margin: 10px;
+            margin-top: 20px;
+        }
+        .seis{
+            position: sticky;
+            bottom: 0;
+            left: 0;
+            width: 200px;
+            border: 3px solid rgb(0, 0, 0);
+            background-color: rgb(95, 95, 95);
+            color: white;
+            margin: 10px;
+            margin-top:500px;
+        }
+        .siete{
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%); /* La propiedad CSS 'transform: translateX(-50%)' desplaza el elemento horizontalmente hacia la izquierda un 50% de su propio ancho, normalmente para centrarlo horizontal respecto a su contenedor cuando se combina con 'left: 50%'. */
+            width: 300px;
+            height: 100px;
+            border: 3px solid rgb(0, 0, 0);
+            background-color: rgb(194, 194, 194);
+            color: blue;
+            text-align: right;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+        .ocho{
+            position: fixed;
+            top: 95%;
+            left: 94%;
+            width: 100px;
+            border: 3px solid rgb(0, 255, 242);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Encabezado 1 (estático, margen 10px)
+        </h1>
+    </header>
+    <nav class="primero">
+            Parrafo
+            <a href="https://aulavirtual-educacion.larioja.org/">Enlace estático</a>
+            <a href="https://aulavirtual-educacion.larioja.org/">Enlace estático</a>
+    </nav>
+
+    <div class="segundo">
+        <a href="externa.html">Enlace relativo separado 150px y 15px</a>   
+    </div>
+
+    <div class="tercero">
+            Div estático 50% ancho de página
+    </div>
+
+    <div class="tercero">
+            Div estático 50% ancho de página
+    </div>
+
+    <div class="cuarto">
+        Div relativo. Se serpara 20px en horizontal y vertical. Se serpara 20px en horizontal y vertical. Se serpara 20px en horizontal y vertical. Se serpara 20px en horizontal y vertical.Se serpara 20px en horizontal y vertical. Div relativo. Se serpara 20px. Div relativo. Se serpara 20px. Div relativo. Se serpara 20px. Div relativo. Se serpara 20px.Div relativo. Se serpara 20px. Div relativo. Se serpara 20px. Div relativo. Se serpara 20px.
+
+        <div class="cuatro1">
+            Div absoluto en la esquina inferior derecha del div relativo
+        </div>
+    </div>
+
+    <div class="cinco">
+        Varios párrafos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis, velit id vulputate efficitur, mi enim vehicula arcu, vitae facilisis felis risus ac massa. Donec iaculis non ipsum ac commodo. Phasellus non dapibus leo. Fusce facilisis condimentum purus, eget tincidunt augue lacinia tempus. Quisque convallis leo sed lacinia semper. Cras id est a mi varius omare. Aliquam erat volutpat. Sed molestie luctus lacus, at molestie dui vehicula ut. Nunc ac placerat urna, laoreet tincidunt ligula. Phasellus accumsan feugiat porta. Curabitur auctor quis lectus ut consequat.
+    </div>
+
+    <div class="cinco">
+        Vestibulum feugiat elit id molestie lobortis. Sed dignissim ac ligula eu finibus. Nulla dignissim nisl est, ut laoreet eros maximus quis. In consequat lectus quis accumsan porttitor. Vestibulum hendrerit ut nibh ut volutpat. Cras fermentum lorem dolor, ac auctor leo faucibus sed. Etiam condimentum tellus eu molestie tristique. Praesent vel massa efficitur urna fringilla blandit. Sed egestas tortor quam, nec tempor metus hendrerit et. Fusce luctus vel urna non tincidunt. In suscipit porta mauris placerat feugiat. Vivamus commodo dui et fringilla egestas. Cras rhoncus risus eu nulla commodo, eget bibendum lacus finibus. Pellentesque eleifend nisl et elit ullamcorper pellentesque. Duis maximus facilisis diam, vitae vulputate nulla interdum ut. Pellentesque laoreet lacus libero, ac maximus lorem semper vitae
+    </div>
+
+    <div class="cinco">
+        Praesent porta nibh tortor, fringilla bibendum diam aliquam non. Morbi sodales sem vestibulum sem scelerisque, eu elementum turpis laoreet. In ut enim tincidunt ex consectetur porta. Proin ut est nisi.Donec at nisi sit amet est blandit facilisis. Cras eget elit volutpat, lacinia velit sed, pretium metus. Nunc faucibus ante nunc, nec laoreet sem iaculis id. Donec nec erat dignissim, facilisis ante in, auctor elit. Aliquam porttitor vitae dolor vel gravida.
+    </div>
+
+    <div class="seis">
+        Div sticky 200 px ancho
+    </div>
+
+    <div class="siete">
+        Div 300 px centrado vertical y dcha.
+    </div>
+
+    <div class="ocho">
+        Div fijo. 100px ancho
+    </div>
+</body>
+</html>

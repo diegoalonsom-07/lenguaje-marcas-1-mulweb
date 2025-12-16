@@ -1,0 +1,28 @@
+body{
+    padding: 20px;
+}
+.gugol{
+    font-weight: bold;
+    background-color: yellow;
+}
+.autores{
+    color: rgb(0, 102, 14);
+}
+.isaac{
+    text-decoration: underline;
+    font-variant: small-caps;
+}
+.libro{
+    color: rgb(107, 2, 2);
+}
+.titulo{
+    color: rgb(0, 89, 255);
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+p{
+    text-align: justify;
+    margin-top: 20px;
+}
+sup{
+    font-size: 9px;
+}

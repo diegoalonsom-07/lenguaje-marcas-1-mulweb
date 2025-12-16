@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 12.0</title>
+    <style>
+        optgroup {
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Preferencias</h1>
+    <label for="Asignatura">Selecciona tu asignatura favorita:</label>
+    <select name="Asignatura" id="Asignatura">
+        <option value="opcion1">Programación</option>
+        <option value="opcion2">Lenguajes de marcas</option>
+        <option value="opcion3">F.O.L.</option>
+    </select>
+    
+    <br><br>
+
+    <label for="Actividad">Elige actividad para el fin de semana</label>
+    <select name="Actividad" id="Actividad">
+        <optgroup label="Deportes">
+            <option value="opcion1">Futbol</option>
+            <option value="opcion2">Tenis</option>
+            <option value="opcion2">Correr</option>
+        </optgroup>
+        <optgroup label="Diversión">
+            <option value="opcion3">Discoteca</option>
+            <option value="opcion4">Cine</option>
+        </optgroup>
+    </select>
+
+    <br><br>
+
+    <input type="submit" value="Enviar">
+</body>
+</html>

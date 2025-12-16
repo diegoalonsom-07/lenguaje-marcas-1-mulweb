@@ -1,0 +1,246 @@
+/*
+ * --------------------------------
+ * ESTILOS GLOBALES Y CONTENEDORES
+ * --------------------------------
+ */
+body {
+    /* [background-color] Color de fondo del body */
+    background-color: #f4f4f9;
+    /* [font-family] Fuente del texto */
+    font-family: 'Roboto', sans-serif;
+    /* [margin] Margen del cuerpo */
+    margin: 20px;
+}
+
+.contenedor {
+    /* [max-width] Ancho máximo del contenedor */
+    max-width: 900px;
+    /* [margin] Centrar el contenedor */
+    margin: 30px auto;
+    /* [padding] Relleno interno */
+    padding: 20px;
+    /* [background-color] Fondo del contenedor */
+    background-color: white;
+    /* [border-radius] Bordes redondeados */
+    border-radius: 8px;
+    /* [box-shadow] Sombra para el contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-ejemplo {
+    /* [text-align] Centrar el texto */
+    text-align: center;
+    /* [color] Color del texto */
+    color: #333;
+    /* [font-weight] Grosor de la fuente */
+    font-weight: 700;
+}
+
+/*
+ * --------------------------------
+ * SECCIÓN TIPOGRAFÍA Y TEXTO
+ * --------------------------------
+ */
+.parrafo-principal {
+    /* [font-size] Tamaño de la fuente */
+    font-size: 1.1em;
+    /* [line-height] Altura de la línea */
+    line-height: 1.6;
+    /* [letter-spacing] Espaciado entre letras */
+    letter-spacing: 0.5px;
+    /* [word-spacing] Espaciado entre palabras */
+    word-spacing: 2px;
+}
+
+.texto-decorado {
+    /* [text-decoration] Subrayado */
+    text-decoration: underline;
+    /* [font-style] Estilo de la fuente */
+    font-style: italic;
+    /* [text-transform] Poner en mayúsculas */
+    text-transform: uppercase;
+    /* [text-shadow] Sombra del texto */
+    text-shadow: 1px 1px 2px gray;
+    /* [font-variant] Versalitas (small-caps) */
+    font-variant: small-caps;
+}
+
+.parrafo-sangria {
+    /* [text-indent] Sangría en la primera línea */
+    text-indent: 50px;
+}
+
+/*
+ * --------------------------------
+ * ESTILOS GENERALES DE CAJAS
+ * --------------------------------
+ */
+.caja {
+    /* [width] Ancho de la caja */
+    width: 120px;
+    /* [height] Altura de la caja */
+    height: 80px;
+    /* [background-color] Fondo de la caja */
+    background-color: #6a0dad;
+    /* [color] Color del texto */
+    color: white;
+    /* [padding] Relleno interno */
+    padding: 10px;
+    /* [border] Borde sólido */
+    border: 2px solid #4a0072;
+    /* [text-align] Centrar texto */
+    text-align: center;
+    /* [box-sizing] Incluye padding y border en el width/height */
+    box-sizing: border-box;
+}
+
+/*
+ * --------------------------------
+ * SECCIÓN FLEXBOX
+ * --------------------------------
+ */
+.flex-contenedor {
+    /* [display] Define como contenedor flexible */
+    display: flex;
+    /* [flex-wrap] Permite que los elementos pasen a la siguiente línea */
+    flex-wrap: wrap;
+    /* [justify-content] Alineación horizontal de los elementos */
+    justify-content: space-around;
+    /* [align-items] Alineación vertical de los elementos */
+    align-items: center;
+    /* [min-height] Altura mínima para mostrar la alineación */
+    min-height: 150px;
+}
+
+.caja-flex-item {
+    /* [margin-right] Margen derecho */
+    margin-right: 10px;
+}
+
+/*
+ * --------------------------------
+ * SECCIÓN MODELO DE CAJA
+ * --------------------------------
+ */
+.caja-modelo-caja {
+    /* [margin-top] Margen superior */
+    margin-top: 10px;
+    /* [margin-bottom] Margen inferior */
+    margin-bottom: 10px;
+    /* [opacity] Hacer la caja semi-transparente */
+    opacity: 0.8;
+}
+
+/*
+ * --------------------------------
+ * SECCIÓN POSICIONAMIENTO Y Z-INDEX
+ * --------------------------------
+ */
+.contenedor-posicionamiento {
+    /* [position] Contenedor con posicionamiento relativo */
+    position: relative;
+    height: 200px;
+    border: 1px dashed #ccc;
+    margin-bottom: 50px;
+    overflow: hidden; /* Para contener las cajas posicionadas */
+}
+
+.caja-posicionada-inferior {
+    /* [position] Posicionamiento fijo (se mantiene en la ventana) */
+    position: fixed;
+    /* [bottom] Distancia desde la parte inferior de la ventana */
+    bottom: 20px;
+    /* [right] Distancia desde la derecha de la ventana */
+    right: 20px;
+    background-color: #e74c3c;
+    /* [cursor] Cambiar el cursor */
+    cursor: pointer;
+}
+
+.caja-posicionada-top {
+    /* [position] Posicionamiento absoluto (relativo al contenedor) */
+    position: absolute;
+    /* [top] Distancia desde la parte superior del contenedor */
+    top: 10px;
+    /* [left] Distancia desde la izquierda del contenedor */
+    left: 10px;
+    background-color: #3498db;
+}
+
+.caja-zindex {
+    /* [position] Necesario para z-index */
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    /* [z-index] Se muestra por encima del elemento con z-index menor */
+    z-index: 2;
+    background-color: #2ecc71;
+}
+
+.caja-normal {
+    /* [position] Necesario para z-index */
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    /* [z-index] Se muestra por debajo del elemento con z-index mayor */
+    z-index: 1;
+    background-color: #f1c40f;
+}
+
+/*
+ * --------------------------------
+ * SECCIÓN TRANSICIÓN Y ANIMACIÓN
+ * --------------------------------
+ */
+.caja-transicion {
+    /* [transition] Transición suave al cambiar la propiedad background-color */
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease;
+    background-color: #34495e;
+}
+
+.caja-transicion:hover {
+    /* [transform] Escala la caja al pasar el ratón */
+    transform: scale(1.1);
+    background-color: #e67e22;
+}
+
+/* Define la animación */
+@keyframes rotar-color {
+    0% {
+        /* [transform-origin] Punto de rotación */
+        transform-origin: center;
+        /* [rotate] Rotación inicial */
+        transform: rotate(0deg);
+        background-color: #9b59b6;
+    }
+    100% {
+        /* [rotate] Rotación final */
+        transform: rotate(360deg);
+        background-color: #c0392b;
+    }
+}
+
+.caja-animada {
+    /* [animation] Aplica la animación */
+    animation: rotar-color 3s infinite linear;
+    /* [animation-fill-mode] Mantiene el estado final de la animación */
+    animation-fill-mode: both;
+}
+
+/*
+ * --------------------------------
+ * NOTAS ADICIONALES
+ * --------------------------------
+ */
+
+/* Ejemplo de uso de @font-face (requiere un archivo de fuente local, aquí simulado) */
+/*
+@font-face {
+    font-family: 'MiFuenteCustom';
+    src: url('mi-fuente.woff2') format('woff2'); /* [src] Fuente */
+    /* [font-style], [font-weight] Propiedades de la fuente */
+/*
+    font-style: normal;
+    font-weight: 400;
+}
+*/

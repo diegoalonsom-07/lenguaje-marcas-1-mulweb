@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+}
+table{
+    border: 2px solid black;
+    margin: auto;
+}
+td{
+    border: 2px solid black;
+    text-align: center;
+}
+th{
+    border: 2px solid black;
+    background-color: rgb(68, 191, 212);
+    text-align: center;
+}
+img{
+    width: 50px;
+}
+.nombre{
+    color: black;
+    width: 120px;
+}
+.nombre:hover{
+    color: rgb(17, 0, 255);
+    font-weight: bold;
+}

@@ -1,0 +1,23 @@
+/*
+    @font-face {
+        font-family: Bybsy;
+        src: url(multimedia/bybsy-regular-webfont.ttf);
+    }
+*/
+@font-face {
+    font-family: Comfortaa;
+    src: url(multimedia/Comfortaa-Regular.ttf);
+}
+h1{
+    /* font-family: Bybsy; */
+    font-size: 300%;
+}
+p{
+    font-family: Comfortaa;
+}
+.primero{
+    font-size: 110%;
+}
+.segundo{
+    font-size: 90%;
+}

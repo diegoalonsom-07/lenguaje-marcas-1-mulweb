@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4.1</title>
+    <style>
+        a {
+            color: inherit;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .window {
+            width: 600px;
+            margin: 60px auto;
+            border: 2px solid #000;
+            box-shadow: 4px 4px 0 #222;
+            background: #c0c0c0;
+        }
+        .title-bar {
+            background: linear-gradient(to bottom, #000080 80%, #3a6ea5 100%);
+            color: #fff;
+            padding: 6px 10px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #000;
+        }
+        .title-bar-buttons {
+            display: flex;
+            gap: 4px;
+        }
+        .title-bar-button {
+            width: 16px;
+            height: 16px;
+            background: #c0c0c0;
+            border: 1px solid #000;
+            display: inline-block;
+            text-align: center;
+            line-height: 14px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .window-content {
+            padding: 20px;
+            color: #000;
+        }
+        table{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="window">
+        <div class="title-bar">
+            <span>Mi PC</span>
+            <div class="title-bar-buttons">
+                <div class="title-bar-button">_</div>
+                <div class="title-bar-button">☐</div>
+                <div class="title-bar-button">✕</div>
+            </div>
+        </div>
+        <div class="window-content">
+            <p><b><a href="../Practica4_1.html">🗀 Explorador de windows</a>/musica</b></p>
+            <table>
+                <tr>
+                    <p style="margin-left: 20px;">Pilates.mp3</p>
+                    <audio controls style="margin-left: 20px;">
+                        <source src="pilates.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </tr>
+                <tr>
+                    <p style="margin-left: 20px;">WakaWaka.mp3</p>
+                    <audio controls style="margin-left: 20px;">
+                        <source src="wakawaka.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </tr>
+                <tr>
+                    <a href="https://www.youtube.com/watch?v=0228mfBzZEk" target="_blank"><p style="margin-left: 20px;">Girasoles-Rozalen (youtube)</p></a>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

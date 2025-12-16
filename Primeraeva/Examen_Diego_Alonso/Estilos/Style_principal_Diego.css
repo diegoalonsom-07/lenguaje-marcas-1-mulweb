@@ -1,0 +1,40 @@
+@font-face {
+    font-family: clubfutbol;
+    src: url(../Fuentes/Club\ de\ Futbol.otf);
+}
+h1{
+    border: 2px solid orange;
+    text-align: center;
+    background-color: rgb(54, 185, 54);
+    color: blue;
+}
+img{
+    width: 350px;
+    height: auto;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.imagen{
+    border: 2px solid orange;
+    padding: 5px;
+    background-color: rgb(54, 185, 54);
+    float: left;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+.seleccion{
+    font-weight: bold;
+    color: orange;
+}
+.nombre{
+    font-family: clubfutbol;
+    color: red;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}

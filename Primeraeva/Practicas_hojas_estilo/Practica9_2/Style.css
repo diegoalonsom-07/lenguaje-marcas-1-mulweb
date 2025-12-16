@@ -1,0 +1,54 @@
+@font-face {
+    font-family: andalus;
+    src: url(andalus.ttf);
+}
+body{
+    background-color: rgb(150, 212, 223);
+    padding: 25px;
+    color: rgb(0, 38, 255);
+    text-align: justify;
+}
+h1{
+    color: brown;
+    text-align: center;
+    font-size: 44px;
+    background-color: aqua;
+    padding: 10px;
+    border: 2px solid rgb(0, 38, 255);
+}
+.gugol{
+    font-family: andalus;
+    font-weight: bold;
+}
+.autor{
+    color: black;
+}
+.Isaac{
+    text-decoration: underline;
+    font-variant: small-caps;
+}
+.Isaac:hover{
+    color: red;
+}
+.libro{
+    color: rgb(107, 2, 2);
+}
+sup{
+    font-size: 8px;
+}
+h2{
+    color: black;
+    font-size: 30px;
+}
+.columnas{
+    top: 280px;
+    left: auto;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-count: 3;
+    padding: 10px;
+
+}
+p{
+    font-style: italic;
+}

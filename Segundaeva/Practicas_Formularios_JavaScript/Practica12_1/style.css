@@ -1,0 +1,42 @@
+h1{
+    color: darkblue;
+}
+.principal{
+    display: flex;
+}
+.izquierdo{
+    flex: 1;
+}
+.derecho{
+    flex: 9;
+}
+.titulo{
+    font-style: italic;
+}
+.deportes{
+    height: 175px;
+}
+.uno{
+    position: absolute;
+    margin-left: 30px;
+    left: 0%;
+    padding: 10px;
+}
+.dos{
+    position: absolute;
+    left: 33%;
+    border: 2px solid rgb(14, 134, 170);
+    padding: 10px;
+    border-radius: 10px;
+}
+.tres{
+    position: absolute;
+    left: 66%;
+    border: 2px solid rgb(14, 134, 170);
+    padding: 10px;
+    border-radius: 10px;
+}
+.botones{
+    text-align: center;
+    position: relative;
+}

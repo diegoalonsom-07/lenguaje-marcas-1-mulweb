@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4.1</title>
+    <style>
+        a {
+            color: inherit;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .window {
+            width: 600px;
+            margin: 60px auto;
+            border: 2px solid #000;
+            box-shadow: 4px 4px 0 #222;
+            background: #c0c0c0;
+        }
+        .title-bar {
+            background: linear-gradient(to bottom, #000080 80%, #3a6ea5 100%);
+            color: #fff;
+            padding: 6px 10px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #000;
+        }
+        .title-bar-buttons {
+            display: flex;
+            gap: 4px;
+        }
+        .title-bar-button {
+            width: 16px;
+            height: 16px;
+            background: #c0c0c0;
+            border: 1px solid #000;
+            display: inline-block;
+            text-align: center;
+            line-height: 14px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .window-content {
+            padding: 20px;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="window">
+        <div class="title-bar">
+            <span>Mi PC</span>
+            <div class="title-bar-buttons">
+                <div class="title-bar-button">_</div>
+                <div class="title-bar-button">☐</div>
+                <div class="title-bar-button">✕</div>
+            </div>
+        </div>
+        <div class="window-content">
+            <p><b><a href="../Practica4_1.html">🗀 Explorador de windows</a>/imagenes</b></p>
+            <table style="border-collapse: collapse; width: 100%;">
+                <tr>
+                    <td style="border: none; padding: 5px; text-align: center;">
+
+                            <img src="moto1.jpg" alt="imagen no cargada" height="120 px;">
+                            <br><span style="font-size: 15px;">Honda CRF 450</span>
+
+                    </td>
+                    <td style="border: none; padding: 5px; text-align: center;">
+
+                            <img src="https://cdn.motor1.com/images/mgl/Kbb3zN/s1/2023-ducati-panigale-v4---front-right.webp" alt="imagen no cargada" height="120 px;">
+                            <br><span style="font-size: 15px; ">Panigale V4</span>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

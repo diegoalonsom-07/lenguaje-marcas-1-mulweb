@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 6.3</title>
+    <style>
+        body {
+            background: #fff;
+            margin: 8px;
+            font-family: Arial, sans-serif;
+            border: #000000 solid 2px;
+            display: inline-block;
+        }
+        header {
+            background-color: #b3b3b3;
+            text-align: center;
+            padding: 20px;
+        }
+        .cabecera {
+            color: white;
+            background-color: black;
+            text-align: center;
+        }
+        nav {
+            background-color: #858585;
+            padding-left: 10px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            text-align: center;
+        }
+        .navegación {
+            background-color: rgb(70, 70, 70);
+            text-align: left;
+            padding: 10px;
+        }
+        button {
+            background-color: white;
+            color: rgb(85, 85, 85);
+            border: none;
+            padding: 10px 10px;
+            margin-right: 10px;
+            border: 2px solid #dfdfdf;
+        }
+        .centro {
+            /*
+                Al aplicar "display: flex" al elemento se convierte en un contenedor flex (Flexbox).
+                Efectos principales:
+                - Los elementos hijos pasan a ser elementos flex y se disponen a lo largo del eje principal (por defecto en fila).
+                - Permite controlar la distribución del espacio y la alineación mediante propiedades como:
+                    - justify-content (alineación en el eje principal),
+                    - align-items / align-self (alineación en el eje perpendicular),
+                    - flex-wrap (control de salto de línea de elementos).
+                - Cada hijo puede ajustar su tamaño y orden con flex-grow, flex-shrink, flex-basis y order.
+                Uso típico:
+                - Centrar elementos vertical y/o horizontalmente,
+                - Crear diseños responsivos y distribuir espacio entre elementos sin usar floats o posicionamiento absoluto.
+                Notas:
+                - Es la forma recomendada para diseños de una dimensión (fila o columna) y combina bien con grid para diseños más complejos.
+            */
+            display: flex;
+        }
+        .izquierda1 {
+            flex: 3;
+            margin-right: 16px;
+            margin-bottom: 50px;
+            background: #eee;
+            padding: 16px;
+        }
+        .izquierda2 {
+            background: #ccc;
+            padding: 16px;
+        }
+        .derecha {
+            flex: 1;
+            background: #eee;
+            border-left: 2px solid #333;
+            padding: 16px;
+        }
+        h2{
+            margin-top: 0;
+            font-size: 2em;
+        }
+        footer {
+            background: #444;
+            color: #fff;
+            padding: 16px;
+        }
+        .piepagina {
+            color: white;
+            background-color: rgb(37, 37, 37);
+            text-align: right;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            Cabecera
+        </div>
+    </header>
+    <nav>
+        <div class="navegación">
+            <button>Opción 1</button>
+            <button>Opción 2</button>
+            <button>Opción 3</button>
+            <button>Opción 4</button>
+            <button>Opción 5</button>
+        </div>
+    </nav>
+        <div class="centro">
+            <div class="izquierda1">
+                <div class="izquierda2">
+                    <h2>Lorem Ipsum</h2>
+                    <p>
+                        Nulla sodales, nunc eu consectetur luctus, risus tortor maximus lacus, nec commodo lacus tortor ut felis.
+                    </p>
+                    <p>
+                        Donec venenatis ultrices orci, in molestie libero aliquet eu. Integer in erat lacus. Proin faucibus magna nec eros cursus blandit.
+                    </p>
+                    <ul>
+                        <li><a href="https://en.wiktionary.org/wiki/Aenean">Aenean</a></li>
+                        <li><a href="https://mymemory.translated.net/es/Lat%C3%ADn/Espa%C3%B1ol/phasellus">Phasellus</a></li>
+                        <li><a href="https://es.wikipedia.org/wiki/Vest%C3%ADbulo">Vestibulum</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="derecha">
+                <h2>Lorem Ipsum</h2>
+                <p>
+                    Nulla sodales, nunc eu consectetur luctus, risus tortor maximus lacus, nec commodo lacus tortor ut felis.
+                </p>
+                <p>
+                    Donec venenatis ultrices orci, in molestie libero aliquet eu. Integer in erat lacus. Proin faucibus magna nec eros cursus blandit.
+                </p>
+            </div>
+        </div>
+    <footer>
+        <div class="piepagina">
+            Pie de página
+        </div>
+    </footer>
+</body>
+</html>

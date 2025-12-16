@@ -1,0 +1,63 @@
+@font-face {
+    font-family: victor;
+    src: url(./multimedia/vitor.ttf);
+}
+@font-face {
+    font-family: andalus;
+    src: url(./multimedia/andalus.ttf);
+}
+body{
+    background-color: rgb(170, 241, 241);
+    background-image: url(./multimedia/etching-small.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+h1{
+    background-image: url(./multimedia/fondo.png);
+    text-align: center;
+    font-family: andalus;
+    color:rgb(122, 32, 32);
+    font-size: 3em;
+    border: 0.06em solid blue;
+    text-shadow: 0.03em 0.03em 0.05em black;
+}
+p{
+    text-indent: 2em;
+    color: blue;
+    font-style: italic;
+    line-height: 1.5;
+}
+.primera{
+    font-family: victor;
+    font-weight: bold;
+}
+.columnas{
+    color:black;
+    word-spacing: 0.001em;
+    left: 30px; 
+    right: 30px; 
+    column-count: 3; 
+    padding: 10px;
+    background-color: rgb(90%, 100%, 100%);
+    opacity: 0.5;
+    text-indent: 0em;
+    font-style: normal;
+}
+.libro{
+    text-transform: uppercase;
+    color: brown;
+}
+.gugol{
+    font-family: andalus;
+    
+}
+.años{
+    text-decoration: line-through;
+}
+.cursor{
+    cursor:help;
+    font-weight: bold;
+}
+.kasner{
+    cursor: none;
+}

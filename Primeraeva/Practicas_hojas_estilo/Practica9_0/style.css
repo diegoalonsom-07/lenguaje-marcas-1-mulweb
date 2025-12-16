@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    color: brown;
+    font-size: 50px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+table{
+    margin: auto;
+    border: 1px solid black;
+}
+td{
+    width: 150px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+.titulo{
+    background-color: brown ;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+.izquierda{
+    background-color: rgb(204, 204, 204);
+}
+img{
+    width: 60px;
+}
+.numeros{
+    color: blue;
+}
+.capital{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+

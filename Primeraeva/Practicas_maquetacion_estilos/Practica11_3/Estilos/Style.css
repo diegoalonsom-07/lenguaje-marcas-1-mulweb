@@ -1,0 +1,79 @@
+@font-face {
+    font-family: ringbearer;
+    src: url(../multimedia/estilos_de_letra/Ringbearer.TTF);
+}
+@font-face {
+    font-family: hobitton;
+    src: url(../multimedia/estilos_de_letra/hobbiton.ttf);
+}
+@font-face {
+    font-family: SegoePrin;
+    src: url(../multimedia/estilos_de_letra/segoe-print.ttf);
+}
+@font-face {
+    font-family: aniron;
+    src: url(../multimedia/estilos_de_letra/Aniron.ttf);
+}
+@keyframes hobbit {
+    from { text-shadow: currentColor; }
+    to   { text-shadow: 2px 2px 5px yellow; }
+}
+@keyframes deslizarDerecha {
+    from { transform: translateX(0); }
+    to   { transform: translateX(200px); }
+}
+body{
+    background-color: black;
+    margin: 0;
+}
+header{
+    background-color: lightgray;
+    position: relative;
+    padding: 30px;
+    text-align: center;
+    height: 100px;
+}
+.Titulo{
+    position: absolute;
+    background-color: lightgray;
+    width: 500px;
+    margin-left: 250px;
+    margin-top: 0px;
+    font-family: aniron;
+    font-size: 60px;
+    color: rgb(170, 129, 27);
+    text-shadow: 2px 2px 5px rgb(88, 88, 88);
+}
+.Titulo:hover{
+    animation: deslizarDerecha 5s linear 3;
+}
+.hobit{
+    font-family: aniron;
+    color: lightblue;
+}
+.hobit:hover{
+    animation: hobbit 5s linear;
+}
+p{
+    margin-left: 10px;
+    color: lightgray;
+    font-family: SegoePrin;
+    font-size: 0.9em;
+}
+.imagen{
+    margin: 1em;
+    border: 15px solid rgb(255, 255, 255);
+    width: fit-content;
+    float: right;
+}
+.imagen:hover{
+    box-shadow: 0 0 40px 10px rgba(255, 215, 0, 0.6);
+}
+.nombre:hover{
+    border: 2px solid goldenrod;
+    background-color: yellow;
+}
+footer{
+    color: red;
+    text-align: center;
+}

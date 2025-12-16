@@ -1,0 +1,31 @@
+body{
+    background-image: url(fondo.png);
+}
+div{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 25px;
+    border: 2px solid #546c8c;
+    border-radius: 5px;
+    width: 120px;
+    height: 85px;
+    text-align: center;
+    padding: 0;
+    background-color: #546c8c;
+    color: white;
+    box-sizing: border-box;
+}
+.uno{
+margin-top: 40px;
+}
+.dos{
+    transform: skew(20deg);
+}
+.tres{
+    margin-top: 10px;
+    rotate: 45deg;
+}
+.cuatro{
+    margin-top: 15px;
+    transform: translateX(120px) scaleX(1.5);
+}

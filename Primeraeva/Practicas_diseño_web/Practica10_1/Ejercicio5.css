@@ -1,0 +1,46 @@
+/*
+    @font-face {
+        font-family: Bybsy;
+        src: url(multimedia/bybsy-regular-webfont.ttf);
+    }
+*/
+
+/*
+    @font-face {
+        font-family: Comfortaa;
+        src: url(multimedia/Comfortaa-Regular.ttf);
+    }
+*/
+
+h1{
+    /* font-family: Bybsy; */
+    /* font-size: 300%; */
+    /* font-variant: small-caps; */
+    /* letter-spacing: 30px; */
+    text-shadow: 3px 3px 5px rgb(255, 0, 0);
+    text-decoration: underline overline;
+}
+p{
+    /* font-family: Comfortaa; */
+    /* text-align: justify; */
+    /* text-indent: 40px; */
+}
+.primero{
+    /* font-size: 110%; */
+    /* font-weight: bold; */
+    /* word-spacing: 20px; */
+}
+.segundo{
+    /* font-size: 90%; */
+    /* font-style: italic; */
+    /* line-height: 2; */
+}
+.normal{
+    font-style: normal;
+}
+.palabra{
+    text-decoration: underline;
+}
+.tachado{
+    text-decoration: line-through;
+}

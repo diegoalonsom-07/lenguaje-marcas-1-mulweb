@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 12.3</title>
+    <script>
+        function enfocar(elemento) {
+            elemento.style.background = "yellow";
+        }
+        function desenfocar(elemento) {
+            elemento.style.background = "white";
+        }
+    </script>
+</head>
+<body>
+    <h1>Bienvenido</h1>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" onfocus="enfocar(this);" onblur="desenfocar(this);">
+        <br><br>
+
+        <label for="apellido">Observaciones:</label>
+        <input type="text" id="apellido" name="apellido" onfocus="enfocar(this);" onblur="desenfocar(this);">
+        <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

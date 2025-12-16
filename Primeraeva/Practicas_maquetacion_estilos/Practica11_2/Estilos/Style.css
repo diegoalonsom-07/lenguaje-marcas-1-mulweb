@@ -1,0 +1,69 @@
+@font-face {
+    font-family: ringbearer;
+    src: url(../multimedia/estilos_de_letra/Ringbearer.TTF);
+}
+@font-face {
+    font-family: hobitton;
+    src: url(../multimedia/estilos_de_letra/hobbiton.ttf);
+}
+@font-face {
+    font-family: SegoePrin;
+    src: url(../multimedia/estilos_de_letra/segoe-print.ttf);
+}
+@keyframes hobbit {
+    from { color: currentColor; }
+    to   { color: red; }
+}
+@keyframes deslizarDerecha {
+    from { transform: translateX(0); }
+    to   { transform: translateX(200px); }
+}
+header{
+    background-color: #4b4b4b;
+    position: relative;
+    padding: 30px;
+    text-align: center;
+    height: 80px;
+}
+.Titulo{
+    position: absolute;
+    background-color: darkgrey;
+    width: 360px;
+    margin-left: 250px;
+    margin-top: 5px;
+    font-family: ringbearer;
+    font-size: 50px;
+    color: rgb(170, 129, 27);
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px gold;
+}
+.Titulo:hover{
+    animation: deslizarDerecha 5s linear 3;
+}
+.hobit{
+    font-family: hobitton;
+}
+.hobit:hover{
+    animation: hobbit 5s linear;
+}
+p{
+    color: blue;
+    font-family: SegoePrin;
+    font-size: 0.9em;
+}
+.imagen{
+    margin: 1em;
+    border: 2px solid green;
+    padding: 0.5em;
+    width: fit-content;
+    box-shadow: 2px 2px 15px rgb(1, 163, 1);
+    float: left;
+}
+.nombre:hover{
+    border: 2px solid goldenrod;
+    background-color: yellow;
+}
+footer{
+    color: red;
+    text-align: center;
+}

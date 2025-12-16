@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 12.1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Recogida de informacion</h1>
+    <form>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <br>
+            <div class="principal">
+                <div class="izquierdo">
+                    <label for="nombre">Nombre:</label><br><br>
+                    <label for="direccion">Dirección:</label><br><br>
+                    <label for="telefono">Telefono:</label><br><br>
+                </div>
+                <div class="derecho">
+                    <input type="text" id="nombre" name="nombre" size="40"><br><br>
+                    <input type="text" id="direccion" name="direccion" size="50"><br><br>
+                    <input type="text" id="telefono" name="telefono" size="15"><br><br>
+                </div>
+            </div>
+        </fieldset>
+        
+        <br><br>
+
+        <fieldset class="deportes">
+            <legend>Deportes: Futbol</legend>
+            <br>
+            <div class="uno">
+                <label for="Equipo" class="titulo">Elige un equipo</label><br><br>
+                <select id="Equipo" name="Equipo">
+                    <option value="Real Madrid">Real Madrid</option>
+                    <option value="FC Barcelona">FC Barcelona</option>
+                    <option value="Atletico de Madrid">Atletico de Madrid</option>
+                    <option value="Sevilla FC">Sevilla FC</option>
+                    <option value="Valencia CF">Valencia CF</option>
+                </select>
+            </div>
+
+            <div class="dos">
+                <label for="uno" class="titulo">Elige un jugador</label><br><br>
+                <input type="radio" id="Messi" name="Messi" value="Messi">
+                <label for="nombre">Messi</label><br>
+                
+                <input type="radio" id="Ronaldo" name="Ronaldo" value="Ronaldo">
+                <label for="apellido">Ronaldo</label><br>
+
+                <input type="radio" id="Falcao" name="Falcao" value="Falcao">
+                <label for="edad">Falcao</label><br>
+            </div>
+
+            <div class="tres">
+                <label for="uno" class="titulo">Otras aficiones</label><br><br>
+                <input type="checkbox" id="Musica" name="Musica" value="Musica">
+                <label for="Música">Música</label><br>
+                
+                <input type="checkbox" id="Lectura" name="Lectura" value="Lectura">
+                <label for="Lectura">Lectura</label><br>
+
+                <input type="checkbox" id="VideoJuegos" name="VideoJuegos" value="VideoJuegos">
+                <label for="VideoJuegos">VideoJuegos</label><br>
+            </div>
+        </fieldset>
+        <div class="botones">
+            <input type="submit" value="Confirmar">
+            <input type="reset" value="Anular">
+        </div>
+    </form>
+</body>
+</html>

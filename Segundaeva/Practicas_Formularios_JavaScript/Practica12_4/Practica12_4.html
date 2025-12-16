@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 12.4</title>
+    <link rel="stylesheet" href="style.css">
+    <script lang="JavaScript">
+        function agradecer(id_objeto) {
+            document.getElementById(id_objeto).innerHTML = "Mmmm Gracias";
+        }
+        function desagradecer(id_objeto) {
+            document.getElementById(id_objeto).innerHTML = "Pasa el raton";
+        }
+        function cambiarColor(id_objeto) {
+            document.getElementById(id_objeto).style.backgroundColor = "red";
+        }
+        function normal(id_objeto) {
+            document.getElementById(id_objeto).style.backgroundColor = "blue";
+        }
+        function cambiaPosicion(id_objeto) {
+            document.getElementById("quintoa").style.visibility = "hidden";
+            document.getElementById("quintob").style.visibility = "visible";
+        }
+        function vuelvoPosicion(id_objeto) {
+            document.getElementById("quintoa").style.visibility ="visible";
+            document.getElementById("quintob").style.visibility ="hidden";
+        }
+        function encendido(id_objeto){
+            document.getElementById(id_objeto).src="./imagenes/BombillaEncendida.png";
+        }
+        function apagado(id_objeto){
+            document.getElementById(id_objeto).src="./imagenes/BombillaApagada.png";
+        }
+    </script>
+</head>
+<body>
+    <div id="primero" onmouseover="JavaScript:agradecer(this.id);" onmouseout="JavaScript:desagradecer(this.id);">
+        Pasa el raton
+    </div>
+    <div id="segundo" onmouseover="JavaScript:cambiarColor(this.id);" onmouseout="JavaScript:normal(this.id)">
+        Pasa el raton
+    </div>
+    <div id="tercero" onclick="JavaScript:agradecer(this.id);">
+        Haz click
+    </div>
+    <div id="cuarto" onmousedown="JavaScript:cambiarColor(this.id);" onmouseup="JavaScript:normal(this.id);">
+        Pulsa el ratón
+    </div>
+    <div id="quintoa" onmouseover="JavaScript:cambiaPosicion(this.id)">
+        ¡Pillame!
+    </div>
+    <div id="quintob" onmouseover="JavaScript:vuelvoPosicion(this.id);" style="visibility:hidden;">
+        ¡Pillame!
+    </div>
+    <img src="./imagenes/BombillaApagada.png" alt="Bombilla Apagada" id="bombilla" onmousedown="JavaScript:encendido(this.id);" onmouseup="JavaScript:apagado(this.id);">
+</body>
+</html>
