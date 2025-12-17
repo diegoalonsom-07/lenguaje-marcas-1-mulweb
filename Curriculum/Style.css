@@ -1,11 +1,3 @@
-:root {
-  --bg: #ffffff;
-  --text: #1a1a1a;
-  --muted: #666666;
-  --accent: #111111;
-  --border: #e6e6e6;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -28,13 +20,12 @@ html, body {
   box-shadow: 0 6px 24px rgba(0,0,0,0.06);
 }
 
-/* Encabezado con imagen centrada */
 .cv-header {
   text-align: center;
   margin-bottom: 28px;
 }
 
-.profile-photo {
+.foto-perfil {
   width: 140px;
   height: 140px;
   object-fit: cover;
@@ -44,7 +35,7 @@ html, body {
   border: 3px solid var(--border);
 }
 
-.cv-name {
+.cv-nombre {
   font-size: 28px;
   letter-spacing: 0.6px;
   margin: 0 0 18px 0;
@@ -53,37 +44,35 @@ html, body {
   text-transform: uppercase;
 }
 
-/* Tabla de contacto */
-.contact-table {
+.contacto {
   width: 100%;
   border-collapse: collapse;
   margin: 0 auto 10px auto;
   max-width: 560px;
 }
 
-.contact-table td {
+.contacto td {
   padding: 8px 10px;
   border-bottom: 1px solid var(--border);
   vertical-align: top;
   font-size: 15px;
 }
 
-.contact-table .label {
+.contacto .label {
   width: 140px;
   color: var(--muted);
   font-weight: 600;
 }
 
-.contact-table a {
+.contacto a {
   color: var(--text);
   text-decoration: none;
 }
 
-.contact-table a:hover {
+.contacto a:hover {
   text-decoration: underline;
 }
 
-/* Secciones */
 .section {
   margin-top: 28px;
 }
@@ -98,14 +87,12 @@ html, body {
   color: var(--accent);
 }
 
-/* Subtítulo dentro de experiencia */
 .subsection-title {
   font-size: 16px;
   margin: 18px 0 8px 0;
   color: var(--accent);
 }
 
-/* Bloques de experiencia y estudios */
 .block {
   margin: 10px 0 12px 0;
 }
@@ -129,7 +116,7 @@ html, body {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 8px;
-  color: var(--muted);
+  color: var(--muted); /* Color neutro y discreto, usado para textos secundarios o elementos con menor jerarquía visual */
   font-size: 14px;
   margin-bottom: 6px;
 }
@@ -138,7 +125,6 @@ html, body {
   color: var(--muted);
 }
 
-/* Listas */
 .list {
   margin: 8px 0 0 0;
   padding-left: 20px;
@@ -149,13 +135,11 @@ html, body {
   font-size: 15px;
 }
 
-/* Párrafos */
 p {
   margin: 8px 0;
   font-size: 15px;
 }
 
-/* Impresión */
 @media print {
   body {
     background: #fff;
