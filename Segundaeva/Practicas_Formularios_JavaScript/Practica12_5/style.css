@@ -1,0 +1,77 @@
+@font-face {
+    font-family: comicsans;
+    src: url(./fuentes/Comic\ Sans\ MS.ttf);
+}
+@font-face {
+    font-family: consolas;
+    src: url(./fuentes/Consolas-Regular.ttf);
+}
+body{
+    font-family: consolas;
+}
+h1{
+    text-align: center;
+    color: darkblue;
+    font-family: comicsans; 
+    font-style: italic;
+}
+body{
+    background-color: lightblue;
+}
+fieldset{
+    background-color: rgb(249, 252, 229);
+}
+legend{
+    font-weight: bold;
+    color: blue;
+    font-size: 24px;
+    font-family: consolas;
+}
+option{
+    font-family: consolas;
+}
+input{
+    font-family: consolas;
+}
+.amarillo{
+    background-color: rgb(245, 245, 81);
+}
+.principal{
+    display: flex;
+}
+.izquierdo{
+    flex: 1;
+}
+.derecho{
+    flex: 9;
+}
+.titulo{
+    color: darkblue;
+}
+.deportes{
+    height: 175px;
+}
+.uno{
+    position: absolute;
+    margin-left: 30px;
+    left: 0%;
+    padding: 10px;
+}
+.dos{
+    position: absolute;
+    left: 33%;
+    border: 2px solid rgb(14, 134, 170);
+    padding: 10px;
+    border-radius: 10px;
+}
+.tres{
+    position: absolute;
+    left: 66%;
+    border: 2px solid rgb(14, 134, 170);
+    padding: 10px;
+    border-radius: 10px;
+}
+.botones{
+    text-align: center;
+    position: relative;
+}
