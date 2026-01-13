@@ -20,9 +20,14 @@
                     <label for="telefono">Telefono:</label><br><br>
                 </div>
                 <div class="derecho">
-                    <input type="text" id="nombre" name="nombre" size="40" class="amarillo" placeholder="Nombre empresa"><br><br>
-                    <input type="text" id="direccion" name="direccion" size="50" class="amarillo" placeholder="Dirección particular"><br><br>
-                    <input type="text" id="telefono" name="telefono" size="15" class="amarillo" placeholder="Móvil"><br><br>
+                    <input type="text" id="nombre" name="nombre" size="40" class="amarillo" placeholder="Nombre empresa" 
+                        onfocus="borde_rojo(this.id)" onblur="borde_normal(this.id)"><br><br>
+                    
+                    <input type="text" id="direccion" name="direccion" size="50" class="amarillo" placeholder="Dirección particular" 
+                        onfocus="borde_rojo(this.id)" onblur="borde_normal(this.id)"><br><br>
+                    
+                    <input type="text" id="telefono" name="telefono" size="15" class="amarillo" placeholder="Móvil" 
+                        onfocus="borde_rojo(this.id)" onblur="borde_normal(this.id)"><br><br>
                 </div>
             </div>
         </fieldset>
@@ -43,22 +48,24 @@
                 </select>
             </div>
 
-            <div class="dos">
-                <label for="uno" class="titulo">Elige un jugador</label><br><br>
-                <input type="radio" id="Messi" name="Messi" value="Messi">
-                <label for="nombre">Messi</label><br>
+            <div id="zona1" class="dos" onmouseover="oscurecer(this.id);" onmouseout="aclarar(this.id);">
+                <label class="titulo">Elige un jugador</label><br><br>
                 
-                <input type="radio" id="Ronaldo" name="Ronaldo" value="Ronaldo">
-                <label for="apellido">Ronaldo</label><br>
+                <input type="radio" id="Messi" name="jugador" value="Messi">
+                <label for="Messi">Messi</label><br>
+                
+                <input type="radio" id="Ronaldo" name="jugador" value="Ronaldo">
+                <label for="Ronaldo">Ronaldo</label><br>
 
-                <input type="radio" id="Falcao" name="Falcao" value="Falcao">
-                <label for="edad">Falcao</label><br>
+                <input type="radio" id="Falcao" name="jugador" value="Falcao">
+                <label for="Falcao">Falcao</label><br>
             </div>
 
-            <div class="tres">
-                <label for="uno" class="titulo">Otras aficiones</label><br><br>
+            <div id="zona2" class="tres" onmouseover="oscurecer(this.id);" onmouseout="aclarar(this.id);">
+                <label class="titulo">Otras aficiones</label><br><br>
+                
                 <input type="checkbox" id="Musica" name="Musica" value="Musica">
-                <label for="Música">Música</label><br>
+                <label for="Musica">Música</label><br>
                 
                 <input type="checkbox" id="Lectura" name="Lectura" value="Lectura">
                 <label for="Lectura">Lectura</label><br>
@@ -69,8 +76,9 @@
         </fieldset>
         <br>
         <div class="botones">
-            <input type="submit" value="Confirmar">
-            <input type="reset" value="Anular">
+            <input type="submit" value="Confirmar" onclick="avisarEnvio();">
+            <input type="reset" value="Anular" onclick="return confirmarBorrado();">
+            <button onclick="mostrarFecha();">Mostrar fecha</button>
         </div>
     </form>
 </body>

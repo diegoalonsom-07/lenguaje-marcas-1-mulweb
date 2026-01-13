@@ -1,26 +1,24 @@
 function borde_rojo(id_objeto) {
     document.getElementById(id_objeto).style.border = "2px solid red";
+    document.getElementById(id_objeto).style.outline = "none"; 
 }
-function desagradecer(id_objeto) {
-    document.getElementById(id_objeto).innerHTML = "Pasa el raton";
+
+function borde_normal(id_objeto) {
+    document.getElementById(id_objeto).style.border = "";
 }
-function cambiarColor(id_objeto) {
-    document.getElementById(id_objeto).style.backgroundColor = "red";
+function oscurecer(id_objeto) {
+    document.getElementById(id_objeto).style.backgroundColor = "#d1d1d1";
 }
-function normal(id_objeto) {
-    document.getElementById(id_objeto).style.backgroundColor = "blue";
+function aclarar(id_objeto) {
+    document.getElementById(id_objeto).style.backgroundColor = "";
 }
-function cambiaPosicion(id_objeto) {
-    document.getElementById("quintoa").style.visibility = "hidden";
-    document.getElementById("quintob").style.visibility = "visible";
+function avisarEnvio() {
+    alert("Se van a enviar todos los datos del formulario");
 }
-function vuelvoPosicion(id_objeto) {
-    document.getElementById("quintoa").style.visibility ="visible";
-    document.getElementById("quintob").style.visibility ="hidden";
+function confirmarBorrado() {
+    var respuesta = confirm("Se van a borrar todos los datos del formulario. ¿Estás seguro?");
+    return respuesta; 
 }
-function encendido(id_objeto){
-    document.getElementById(id_objeto).src="./imagenes/BombillaEncendida.png";
-}
-function apagado(id_objeto){
-    document.getElementById(id_objeto).src="./imagenes/BombillaApagada.png";
+function mostrarFecha() {
+    alert(new Date().toLocaleDateString());
 }
