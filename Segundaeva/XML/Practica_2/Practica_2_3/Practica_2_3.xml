@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca SYSTEM "Practica_2_3.dtd">
+<biblioteca>
+    <libro>
+        <titulo>Arde París</titulo>
+        <autores>
+            <autor>
+                <nombre>Dominique</nombre>
+                <apellido>Lapierre</apellido>
+            </autor>
+            <autor>
+                <nombre>Larry</nombre>
+                <apellido>Collins</apellido>
+            </autor>
+        </autores>
+        <año_publi>1975</año_publi>
+        <editorial>Alfaguara</editorial>
+        <ISBN>97884010101</ISBN>
+        <fecha_comp>
+            <dia>12</dia>
+            <mes>10</mes>
+            <año>2012</año>
+        </fecha_comp>
+    </libro>
+    <libro>
+        <titulo>La sombra del viento</titulo>
+        <autores>
+            <autor>
+                <nombre>Carlos</nombre>
+                <apellido>Ruiz Zafón</apellido>
+            </autor>
+        </autores>
+        <año_publi>2001</año_publi>
+        <editorial>Planeta</editorial>
+        <ISBN>9788408052210</ISBN>
+        <fecha_comp>
+            <dia>5</dia>
+            <mes>3</mes>
+            <año>2015</año>
+        </fecha_comp>
+    </libro>
+    <libro>
+        <titulo>Cien años de soledad</titulo>
+        <autores>
+            <autor>
+                <nombre>Gabriel</nombre>
+                <apellido>García Márquez</apellido>
+            </autor>
+        </autores>
+        <año_publi>1967</año_publi>
+        <editorial>Sudamericana</editorial>
+        <ISBN>9780307474728</ISBN>
+        <fecha_comp>
+            <dia>20</dia>
+            <mes>7</mes>
+            <año>2010</año>
+        </fecha_comp>
+    </libro>
+</biblioteca>

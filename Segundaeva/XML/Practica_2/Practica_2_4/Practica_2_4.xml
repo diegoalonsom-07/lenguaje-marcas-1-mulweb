@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PERFIL SYSTEM "Practica_2_4.dtd">
+<PERFIL>
+    <PERSONA>
+        <NOMBRE_COM></NOMBRE_COM>
+        <APODO></APODO>
+    </PERSONA>
+    <DIRECCION>
+        <CALLE></CALLE>
+        <CIUDAD></CIUDAD>
+        <PAIS></PAIS>
+    </DIRECCION>
+    <COD_POSTAL></COD_POSTAL>
+</PERFIL>

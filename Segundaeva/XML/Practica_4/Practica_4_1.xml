@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Practica_4_1.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<libro>
+    <titulo>ElQuijote</titulo>
+    <autor>Cervantes</autor>
+    <editorial>Planeta</editorial>
+    <isbn>978841234567</isbn>
+    <importe>12.34</importe>
+    <paginas>1234</paginas>
+    <prestado>true</prestado>
+</libro> 
