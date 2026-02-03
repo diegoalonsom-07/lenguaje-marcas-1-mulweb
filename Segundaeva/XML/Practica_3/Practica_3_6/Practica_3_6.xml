@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE videoclub SYSTEM "Practica_3_6.dtd">
+<videoclub>
+    <pelicula>
+        <titulo idPel="P1">Tomates verdes fritos</titulo>
+        <pais>USA</pais>
+        <directores>
+            <nombre_dir>Jon Avnet</nombre_dir>
+        </directores>
+        <interpretes>
+            <interprete>
+                <nombre_int>Mary</nombre_int>
+                <apellido>Stuart Masterson</apellido>
+            </interprete>
+            <interprete>
+                <nombre_int>Mary-Louise</nombre_int>
+                <apellido>Parker</apellido>
+            </interprete>
+        </interpretes>
+        <genero>
+            <nombre_gen>Drama</nombre_gen>
+            <nombre_gen>Comedia</nombre_gen>
+        </genero>
+        <duracion formato="2D">100</duracion>
+        <año>1991</año>
+    </pelicula>
+
+    <pelicula>
+        <titulo idPel="P2">El Hobbit</titulo>
+        <pais idioma="español">USA</pais>
+        <directores>
+            <nombre_dir>Peter Jackson</nombre_dir>
+        </directores>
+        <interpretes>
+            <interprete>
+                <nombre_int>Ian</nombre_int>
+                <apellido>McKellen</apellido>
+            </interprete>
+            <interprete>
+                <nombre_int>Martin</nombre_int>
+                <apellido>Freeman</apellido>
+            </interprete>
+        </interpretes>
+        <genero>
+            <nombre_gen>Aventura</nombre_gen>
+            <nombre_gen>Fantasía</nombre_gen>
+        </genero>
+        <duracion formato="3D">169</duracion>
+        <año>2012</año>
+    </pelicula>
+
+    <pelicula>
+        <titulo idPel="P3">Los amantes pasajeros</titulo> <!-- ¿Por qué no valida el punto anterior? Modifica lo que sea necesario para que lo valide. (mismo id que en el aterio P2 -> P3)-->
+        <pais idioma="español">España</pais>
+        <directores>
+            <nombre_dir>Pedro Almodóvar</nombre_dir>
+        </directores>
+        <interpretes>
+            <interprete>
+                <nombre_int>Javier</nombre_int>
+                <apellido>Cámara</apellido>
+            </interprete>
+            <interprete>
+                <nombre_int>Martin</nombre_int>
+                <apellido>Areces</apellido>
+            </interprete>
+            <interprete>
+                <nombre_int>Raúl</nombre_int>
+                <apellido>Arévalo</apellido>
+            </interprete>
+        </interpretes>
+        <genero>
+            <nombre_gen>Comedia</nombre_gen>
+        </genero>
+        <duracion formato="2D">90</duracion>
+        <año>2013</año>
+    </pelicula>
+</videoclub>

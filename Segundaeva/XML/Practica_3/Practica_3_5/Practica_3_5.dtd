@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT videoclub (pelicula+)>
+<!ELEMENT pelicula (titulo, pais, directores, interpretes, genero, duracion, año)>
+<!ELEMENT titulo (#PCDATA)>
+<!ATTLIST titulo idPel ID #REQUIRED>
+<!ELEMENT pais (#PCDATA)>
+<!ATTLIST pais idioma CDATA #IMPLIED>
+<!ELEMENT directores (nombre_dir+)>
+<!ELEMENT nombre_dir (#PCDATA)>
+<!ELEMENT interpretes (interprete*)>
+<!ELEMENT interprete (nombre_int, apellido)>
+<!ELEMENT nombre_int (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT genero (nombre_gen+)>
+<!ELEMENT nombre_gen (#PCDATA)>
+<!ELEMENT duracion (#PCDATA)>
+<!ATTLIST duracion formato (2D | 3D) #REQUIRED>
+<!ELEMENT año (#PCDATA)>

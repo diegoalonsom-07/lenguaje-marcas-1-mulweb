@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE videoclub SYSTEM "Practica_3_5.dtd">
+<videoclub>
+    <pelicula>
+        <titulo idPel="P1">Tomates verdes fritos</titulo>
+        <pais idioma="Español">USA</pais>
+        <directores>
+            <nombre_dir>Jon Avnet</nombre_dir>
+        </directores>
+        <interpretes>
+            <interprete>
+                <nombre_int>Mary</nombre_int>
+                <apellido>Stuart Masterson</apellido>
+            </interprete>
+            <interprete>
+                <nombre_int>Mary-Louise</nombre_int>
+                <apellido>Parker</apellido>
+            </interprete>
+        </interpretes>
+        <genero>
+            <nombre_gen>Drama</nombre_gen>
+            <nombre_gen>Comedia</nombre_gen>
+        </genero>
+        <duracion formato="2D">100</duracion>
+        <año>1991</año>
+    </pelicula>
+    
+    <pelicula>
+        <titulo idPel="P2">El Hobbit</titulo>
+        <pais idioma="Español">USA</pais>
+        <directores>
+            <nombre_dir>Peter Jackson</nombre_dir>
+        </directores>
+        <interpretes>
+            <interprete>
+                <nombre_int>Ian</nombre_int>
+                <apellido>McKellen</apellido>
+            </interprete>
+            <interprete>
+                <nombre_int>Martin</nombre_int>
+                <apellido>Freeman</apellido>
+            </interprete>
+        </interpretes>
+        <genero>
+            <nombre_gen>Aventura</nombre_gen>
+            <nombre_gen>Fantasía</nombre_gen>
+        </genero>
+        <duracion formato="3D">100</duracion>
+        <año>1991</año>
+    </pelicula>
+</videoclub>
