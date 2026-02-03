@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="libreria">
+        <xs:complexType>
+                    <xs:all>
+                        <xs:element name="libro"/>
+                            <xs:complexType>
+                                <xs:all>
+                                    <xs:element name="titulo" type="xs:string"/>
+                                    <xs:element name="autor" type="xs:string"/>
+                                    <xs:element name="editorial" type="xs:string"/>
+                                    <xs:element name="isbn" type="xs:string"/>
+                                    <xs:element name="importe" type="xs:decimal"/>
+                                    <xs:element name="paginas" type="xs:integer"/>
+                                    <xs:element name="prestado" type="xs:boolean"/>
+                                    <xs:element name="fechaCompra" type="xs:date"/>
+                                </xs:all>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:all>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
