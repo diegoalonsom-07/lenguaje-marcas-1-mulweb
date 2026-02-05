@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="libreria" type="tipoBiblioteca"/>
+
+    <xs:complexType name="tipoBiblioteca">
+        <xs:sequence>
+            <xs:element name="libro" type="tipoLibro" maxOccurs="25"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoLibro">
+        <xs:sequence>
+            <xs:element name="titulo" type="tipoTitulo"/>
+            <xs:element name="autor" type="xs:string"/>
+            <xs:element name="editorial" type="tipoEditorial"/>
+            <xs:element name="isbn" type="xs:string" minOccurs="0"/>
+            <xs:element name="importe" type="tipoImporte"/>
+            <xs:element name="paginas" type="xs:integer"/>
+            <xs:element name="prestado" type="xs:boolean" default="false"/>
+            <xs:element name="fechaCompra" type="xs:date"/>
+            <xs:element name="ubicacion" type="tipoUbicacion" maxOccurs="2"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoUbicacion">
+        <xs:all>
+            <xs:element name="armario" type="tipoArmario"/>
+            <xs:element name="balda" type="tipoBalda"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoTitulo">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="25"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoEditorial">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Planeta"/>
+            <xs:enumeration value="Bruguera"/>
+            <xs:enumeration value="Minotauro"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoImporte">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="5"/>
+            <xs:maxInclusive value="25"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoArmario">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoBalda">
+        <xs:restriction base="xs:integer"> 
+            <xs:minInclusive value="1"/> 
+            <xs:maxInclusive value="6"/> 
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
