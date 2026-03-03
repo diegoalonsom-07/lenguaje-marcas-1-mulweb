@@ -1,0 +1,32 @@
+body{
+    background-color: lightgreen;
+    font-family: Verdana;
+}
+.amarillo{
+    background-color: rgb(245, 245, 81);
+}
+.principal{
+    display: flex;
+}
+.izquierdo{
+    flex: 1;
+}
+.derecho{
+    flex: 9;
+}
+fieldset{
+    background-color: ivory;
+}
+legend{
+    font-weight: bold;
+    color: blue;
+    font-size: 22px;
+}
+.botones{
+    text-align: center;
+    position: relative;
+}
+h1{
+    text-align: center;
+    color: darkblue;
+}

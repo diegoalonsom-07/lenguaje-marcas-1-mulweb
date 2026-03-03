@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="CATALOGO" type="tipoCatalogo"/>
+
+    <xs:complexType name="tipoCatalogo">
+        <xs:sequence>
+            <xs:element name="PLANTA" type="tipoPlanta" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoPlanta">
+        <xs:sequence>
+            <xs:element name="IDENTIFICADOR" type="tipoIdentificador"/>
+            <xs:element name="DATOS" type="tipoDatos"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoIdentificador">
+        <xs:restriction base="xs:string">
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="tipoDatos">
+        <xs:sequence>
+            <xs:element name="ZONA" type="tipoZona"/>
+            <xs:element name="ILUMINACION" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="PRECIO" type="xs:double"/>
+            <xs:element name="CODIGO" type="tipoCodigo"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoZona">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoCodigo">
+        <xs:restriction base="xs:string">
+            <xs:length value="6"></xs:length>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+</xs:schema>
